@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver  # removeable
+    url: ${DEMO_POSTGRESQL_URL:jdbc:postgresql://localhost:5433/demo}
+    username: ${DEMO_POSTGRESQL_USERNAME:root}
+    password: ${DEMO_POSTGRESQL_PASSWORD:root}
+
+# Logging Leve: Fatal,Error, Warn, info, Debug, Trace
+# 보기설정: info, Debug, Trace 정보가 일반적
+logging:
+  level:
+    root: debug
