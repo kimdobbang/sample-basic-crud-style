@@ -31,6 +31,7 @@ configurations {
 }
 
 repositories {
+    google()
     mavenCentral()
 }
 
@@ -52,7 +53,7 @@ dependencies {
     implementation("org.flywaydb:flyway-database-postgresql")
 
     // lombok
-    compileOnly("org.projectlombok:lombok")
+    compileOnly("org.projectlombok:lombok") // implementation안하고 compile only로 충분함
     annotationProcessor("org.projectlombok:lombok")
 
     // mapstruct
