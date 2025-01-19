@@ -5,12 +5,12 @@ import com.example.demo.board.repository.BoardRepository;
 import org.springframework.stereotype.Service;
 
 @Service
-public class BoardCommandService implements BoardCreateUseCase {
+public class BoardCommandService implements BoardCreateUseCase /*서비스 인터페이스*/{
 
     private final BoardRepository boardRepository;
 
     // 생성자
-    public BoardCommandService (BoardRepository injectedBean/*파라미터에 빈이 주입됨*/){
+    public BoardCommandService (BoardRepository injectedBean/*(파라미터) 빈이 주입되는 자리*/){
         // 주입받은 빈 옮겨담기
         this.boardRepository = injectedBean;
     }
