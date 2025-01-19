@@ -25,6 +25,6 @@ spring:
       ddl-auto: none # flyway 사용하면 none 또는 validate (엄격한 경우 validate)
 
   flyway:
-    baseline-on-migrate: true # flyway schema history 테이블이 없다면 생성한다.
+    baseline-on-migrate: true # flyway schema history 테이블이 없다면 생성한다.(원래 안정상 false로 되어있고, 명시적으로 true로 한다)
     locations:
       - classpath:db/migration/v1_0

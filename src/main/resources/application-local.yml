@@ -9,4 +9,4 @@ spring:
 # 보기설정: info, Debug, Trace 정보가 일반적
 logging:
   level:
-    root: debug
+    root: info
